@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CV Jakub Pawełek</title>
+    
 </head>
 
 <body>
 
     <header>
-        <h1>Jakub Pawełek</h1>
-        <p>Software Validation Engineer</p>
-        <img src="image/jpg.png" alt="Zdjecie Jakuba Pawełka" width="200" height="250">
-        <h2>Contact Information</h2>
-        <ul>
-            <li>Email:jakub.pawelek99@gmail.com</li>
-            <li>Phone: +48 530 888 974</li>
-        </ul>
+        <img id="Profilowe" src="image/jpg.png" alt="Zdjecie Jakuba Pawełka">
+        <div id="Header_Container">
+            <h1>Jakub Pawełek</h1>
+            <p>Software Validation Engineer</p>
+            <div id="Contact_Information">
+                <h2>Contact Information</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <img class="icon" src="image/email.png" alt="emial icon">
+                            Email: jakub.pawelek99@gmail.com
+                        </li>
+                        <li>
+                            <img class="icon" src="image/phone.png" alt="phone icon">
+                            Phone: +48 530 888 974
+                        </li>
+                    </ul>
+                </div>
+        </div>
     </header>
 
     <main>
 
-        <section id="About_Me">
+        <section class="left-column" id="About_Me">
             <h2>About Me</h2>
             <p>Jako Inżynier ds. Walidacji Oprogramowania, posiadam ponad dwuletnie doświadczenie w
 testowaniu funkcjonalnym i walidacji systemów. Moje dotychczasowe obowiązki obejmowały
@@ -33,7 +45,8 @@ obszarze tworzenia oprogramowania, realizując własne projekty w celu pogłębi
 zakresu projektowania i implementacji oprogramowania.</p>
         </section>
 
-        <section id="Experience">
+        <div class="layout">
+        <section class="left-column" id="Experience">
             <h2>Experience</h2>
             <table>
                 <tr>
@@ -72,7 +85,7 @@ zakresu projektowania i implementacji oprogramowania.</p>
             </table>
         </section>
 
-        <section id="Skills">
+        <section class="right-column" id="Skills">
             <h2>Skills</h2>
             <ul>
                 <li>ISTQB 4.0 — Poziom Podstawowy</li>
@@ -86,12 +99,12 @@ zakresu projektowania i implementacji oprogramowania.</p>
             </ul>
         </section>
 
-        <section id="Langueges">
+        <section class="right-column" id="Langueges">
             <h2>Langueges</h2>
             <p>English</p>
         </section>
 
-        <section id="Courses_and_Certificates">
+        <section class="right-column" id="Courses_and_Certificates">
             <h2>Courses and Certificates</h2>
             <ul>
                 <li><strong>ISTQB® Poziomu Podstawowego (v4.0)</strong></li>
@@ -100,7 +113,7 @@ zakresu projektowania i implementacji oprogramowania.</p>
             </ul>
         </section>
 
-        <section id="Education">
+        <section class="right-column" id="Education">
             <h2>Education</h2>
             <table>
                 <tr>
@@ -123,8 +136,8 @@ zakresu projektowania i implementacji oprogramowania.</p>
             </table>
         </section>
 
-        <section id="Hobbys">
-            <h2>Courses and Certificates</h2>
+        <section class="left-column" id="Hobbys">
+            <h2>Hobbys</h2>
             <ul>
                 <li>Siłownia</li>
                 <li>Brazylijskie Jiu-Jitsu</li>
@@ -132,7 +145,7 @@ zakresu projektowania i implementacji oprogramowania.</p>
                 <li>Nowoczesne technologie</li>
             </ul>
         </section>
-
+    </div>
 
 
 
@@ -144,6 +157,8 @@ zakresu projektowania i implementacji oprogramowania.</p>
     </main>
 
     <footer>
-
+        <p>&copy; 
+            Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z
+Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. <br>2025 Jakub Pawełek</br></p>
     </footer>
 </body>
